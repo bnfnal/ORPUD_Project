@@ -15,7 +15,7 @@
                 <input type="text" placeholder="email" name="email">
             </div>
             <div class="input-form">
-                <input type="text" placeholder="password" name="pass">
+                <input type="text" placeholder="пароль" name="pass">
             </div>
             <div class="input-form">
                 <input type="submit" value="Войти">
@@ -33,6 +33,8 @@
                 <input type="submit" value="Зарегистрироваться">
             </div>
         </form>
+
+        &nbsp;
 
     </div>
 

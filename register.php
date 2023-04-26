@@ -8,26 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="form">
+        <h1>Регистрация</h1>
+        <form action="login.php" method="post">
+            <div class="input-form">
+                <input type="text" placeholder="Имя" name="name">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Фамилия" name="surname">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Отчество" name="patronymic">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Дата рождения" name="birthday">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Адрес" name="address">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" name="phone">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Еmail" name="email">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Пароль" name="pass">
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="Повторите пароль" name="repeatpass">
+            </div>
+            <div class="input-form">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+        </form>
 
-<form action="login.php" method="post">
-    <p>ФИО: <input type="text" placeholder="name" name="name"> </p>
-    <p>Дата рождения: <input type="text" placeholder="date" name="date"> </p>
-    <p>email: <input type="text" placeholder="email" name="email"> </p>
-    <p>Пароль:  <input type="text" placeholder="password" name="pass"> </p>
-    <p>Повторите пароль: <input type="text" placeholder="repeat password" name="repeatpass"> </p>
-    <p> <button type="submit">Зарегистрироваться</button>
-</form>
+        &nbsp;
 
+    </div>
 
 </body>
 </html>
 
 <?php
-
-?>
-<?php
-
-$login = $_POST['login'];
+$name = $_POST['name'];
+$surname = $_POST['surname'];
+$patronymic = $_POST['patronymic'];
+$birthday = $_POST['birthday'];
+$address = $_POST['address'];
+$phone = $_POST['phone'];
+$email = $_POST['email'];
 $pass = $_POST['pass'];
 $repeatpass = $_POST['repeatpass'];
-$email = $_POST['email'];
