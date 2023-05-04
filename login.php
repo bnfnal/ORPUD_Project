@@ -10,7 +10,7 @@
 <body>
     <div class="form">
         <h1>Вход</h1>
-        <form action="main.php" method="post">
+        <form action="login_data.php" method="post">
             <div class="input-form">
                 <input type="text" placeholder="email" name="email">
             </div>
@@ -28,7 +28,7 @@
             </div>
         </form>
 
-        <form action="register.php">
+        <form action="registration.php">
             <div class="input-form">
                 <input type="submit" value="Зарегистрироваться">
             </div>

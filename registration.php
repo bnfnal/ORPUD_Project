@@ -10,7 +10,7 @@
 <body>
     <div class="form">
         <h1>Регистрация</h1>
-        <form action="login.php" method="post">
+        <form action="registration_data.php" method="post">
             <div class="input-form">
                 <input type="text" placeholder="Имя" name="name">
             </div>
@@ -51,12 +51,4 @@
 </html>
 
 <?php
-$name = $_POST['name'];
-$surname = $_POST['surname'];
-$patronymic = $_POST['patronymic'];
-$birthday = $_POST['birthday'];
-$address = $_POST['address'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$pass = $_POST['pass'];
-$repeatpass = $_POST['repeatpass'];
+
