@@ -16,7 +16,7 @@ body {
 }
 
 .form h1 {
-    margin: 30px 100px;
+    margin: 40px 100px;
     padding: 0;
     text-align: center;
     color: #fff;
@@ -150,13 +150,11 @@ body {
     background: url(no-view.svg) 0 0 no-repeat;
 }
 
-.error input {
-    border-color: #ff3860;
-}
-
-.error {
+#error{
     color: #ff3860;
-    font-size: 9px;
-    height: 13px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    visibility: hidden;
 }
 
