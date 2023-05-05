@@ -15,15 +15,15 @@
                 <input type="text" placeholder="email" name="email">
             </div>
             <div class="input-form">
-                <input type="text" placeholder="пароль" name="pass">
+                <input type="text" placeholder="пароль" name="password">
             </div>
             <div class="input-form">
                 <input type="submit" value="Войти">
             </div>
         </form>
 
-        <form action="forgot_passwd.php">
-            <div class="forget">
+        <form action="forgot_password.php">
+            <div class="forgot">
                 <input type="submit" value="Забыли пароль?">
             </div>
         </form>

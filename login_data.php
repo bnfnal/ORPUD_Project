@@ -1,4 +1,4 @@
 <?php
 
 $email = $_POST['email'];
-$pass = $_POST['pass'];
+$password = $_POST['password'];
