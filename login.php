@@ -32,9 +32,7 @@
             <div class="input-form">
                 <input type="submit" value="Зарегистрироваться">
             </div>
-        </form>
-
-        &nbsp;
+        </form>&nbsp;
 
     </div>
 

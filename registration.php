@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="phone_mask.js"></script>
+    <script src="email_mask.js"></script>
 </head>
 
 <body>
@@ -40,13 +41,13 @@
                 <input type="tel" class="phone_mask" placeholder="Номер телефона" name="phone">
             </div>
             <div class="input-form">
-                <input type="text" placeholder="Еmail" name="email">
+                <input type="text" id="email_mask" placeholder="Еmail" name="email">
             </div>
             <div class="input-form">
                 <input type="text" placeholder="Пароль" name="password">
             </div>
             <div class="input-form">
-                <input type="text" placeholder="Повторите пароль" name="repeatpass">
+                <input type="text" placeholder="Повторите пароль" name="repeat_password">
             </div>
             <div class="input-form">
                 <input type="submit" value="Зарегистрироваться">
@@ -75,6 +76,12 @@
 
         $('input[type="tel"]').click(function(){
             $(this).setCursorPosition(4);  // set position number
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#email_mask").inputmask("email")
         });
     </script>
 
