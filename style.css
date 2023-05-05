@@ -66,12 +66,8 @@ body {
     border: 1px solid #0fc3f5;
 }
 
-.input-form input[type="date"]:focus, .input-form input[type="password"]:focus {
+.input-form input[type="date"]:focus, .input-form input[type="tel"]:focus, .input-form input[type="file"]:focus{
     border: 1px solid #0fc3f5;
-}
-
-.input-form input[type="tel"]:focus, .input-form input[type="password"]:focus {
-border: 1px solid #0fc3f5;
 }
 
 .radio:focus{
@@ -122,3 +118,35 @@ border: 1px solid #0fc3f5;
 .forgot input[type="submit"]:hover {
     background: #4442db;
 }
+
+.password {
+    margin: 15px 40px;
+    text-align: center;
+    position: relative;
+}
+#password-input {
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+    background: url(no-view.svg) 0 0 no-repeat;
+}
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вход</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="form">
@@ -14,8 +15,9 @@
             <div class="input-form">
                 <input type="text" placeholder="email" name="email">
             </div>
-            <div class="input-form">
-                <input type="text" placeholder="пароль" name="password">
+            <div class="password">
+                <input type="password" id="password-input" placeholder="пароль" name="password">
+                <a href="#" class="password-control"></a>
             </div>
             <div class="input-form">
                 <input type="submit" value="Войти">
@@ -35,6 +37,19 @@
         </form>&nbsp;
 
     </div>
+
+    <script>
+        $('body').on('click', '.password-control', function(){
+            if ($('#password-input').attr('type') == 'password'){
+                $(this).addClass('view');
+                $('#password-input').attr('type', 'text');
+            } else {
+                $(this).removeClass('view');
+                $('#password-input').attr('type', 'password');
+            }
+            return false;
+        });
+    </script>
 
 </body>
 </html>

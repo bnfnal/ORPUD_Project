@@ -43,11 +43,13 @@
             <div class="input-form">
                 <input type="text" id="email_mask" placeholder="Еmail" name="email">
             </div>
-            <div class="input-form">
-                <input type="text" placeholder="Пароль" name="password">
+            <div class="password">
+                <input type="password" id="password-input" placeholder="Пароль" name="password">
+                <a href="#" class="password-control"></a>
             </div>
-            <div class="input-form">
-                <input type="text" placeholder="Повторите пароль" name="repeat_password">
+            <div class="password">
+                <input type="password" id="password-input" placeholder="Повторите пароль" name="repeat_password">
+                <a href="#" class="password-control"></a>
             </div>
             <div class="input-form">
                 <input type="submit" value="Зарегистрироваться">
@@ -82,6 +84,19 @@
     <script>
         $(document).ready(function(){
             $("#email_mask").inputmask("email")
+        });
+    </script>
+
+    <script>
+        $('body').on('click', '.password-control', function(){
+            if ($('#password-input').attr('type') == 'password'){
+                $(this).addClass('view');
+                $('#password-input').attr('type', 'text');
+            } else {
+                $(this).removeClass('view');
+                $('#password-input').attr('type', 'password');
+            }
+            return false;
         });
     </script>
 
