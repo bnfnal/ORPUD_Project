@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('connect_db.php');
 
 $surname = $_POST['surname'];
 $name = $_POST['name'];

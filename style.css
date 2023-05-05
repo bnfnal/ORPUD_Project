@@ -150,3 +150,13 @@ body {
     background: url(no-view.svg) 0 0 no-repeat;
 }
 
+.error input {
+    border-color: #ff3860;
+}
+
+.error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+

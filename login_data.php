@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.php');
+require_once('connect_db.php');
 
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -22,3 +22,5 @@ if (empty($email) || empty($password)){
         echo "Неверный email или пароль";
     }
 }
+
+?>
