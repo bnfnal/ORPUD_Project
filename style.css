@@ -16,12 +16,13 @@ body {
 }
 
 .form h1 {
-    margin: 40px 100px;
+    margin: 30px 100px;
     padding: 0;
     text-align: center;
     color: #fff;
     font-size: 35px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .input-form {
@@ -150,11 +151,19 @@ body {
     background: url(no-view.svg) 0 0 no-repeat;
 }
 
-#error{
+.error{
     color: #ff3860;
     font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: -10px;
-    visibility: hidden;
+    margin: 15px 40px;
+    margin-bottom: -20px;
+    text-align: center;
 }
 
+.result{
+    color: #ff3860;
+    font-size: 30px;
+    margin: 15px 40px;
+    margin-bottom: -20px;
+    text-align: center;
+    padding: 20px;
+}

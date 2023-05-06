@@ -14,6 +14,7 @@
         <div class="input-form">
             <input type="file" name="image">
         </div>
+        <div class="result">РЕЗУЛЬТАТ</div>
         <div class="input-form">
             <input type="submit" value="Загрузить фото">
         </div>

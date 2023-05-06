@@ -14,16 +14,15 @@
     <form action="login_data.php" method="post">
         <div class="input-form">
             <input type="text" placeholder="email" name="email">
-            <p id="error">Error message</p>
         </div>
         <div class="password">
             <input type="password" id="password-input" placeholder="пароль" name="password">
             <a href="#" class="password-control"></a>
-            <p id="error">Error message</p>
         </div>
         <div class="input-form">
-            <input type="submit" value="Войти">
+            <input type="submit" name="entry" value="Войти">
         </div>
+
     </form>
 
     <form action="forgot_password.php">
