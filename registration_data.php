@@ -17,7 +17,7 @@ if (empty($surname) || empty($name) || empty($address) || empty($phone) || empty
     $fail = "Заполните все поля";
 }
 else{
-        $sql1 = "SELECT * FROM `users1` WHERE email = '$email'";
+        $sql1 = "SELECT * FROM `users` WHERE email = '$email'";
         $result = $conn->query($sql1);
 
         if ($result->num_rows > 0)
@@ -29,7 +29,7 @@ else{
                 $fail = "Пароли не совпадают";
             }
             else{
-                $sql = "INSERT INTO `users1` (surname, name, patronymic, gender, birthday, address, phone, email, password, comments) VALUES ('$surname', '$name', '$patronymic', '$gender', '$birthday', '$address', '$phone', '$email', '$password', NULL)";
+                $sql = "INSERT INTO `users` (surname, name, patronymic, gender, birthday, address, phone, email, password, comments) VALUES ('$surname', '$name', '$patronymic', '$gender', '$birthday', '$address', '$phone', '$email', '$password', NULL)";
                 if ($conn -> query($sql) === TRUE){
                     $success = "Успешная регистрация";
                 }

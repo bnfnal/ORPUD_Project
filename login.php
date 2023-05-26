@@ -25,7 +25,7 @@
 
     </form>
 
-    <form action="forgot_password.php">
+    <form>
         <div class="forgot">
             <input type="submit" value="Забыли пароль?">
         </div>

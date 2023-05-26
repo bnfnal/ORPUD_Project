@@ -8,7 +8,7 @@ $password = $_POST['password'];
 if (empty($email) || empty($password)){
     $fail = "Заполните все поля";
 } else {
-    $sql = "SELECT * FROM `users1` WHERE email = '$email' AND password = '$password'";
+    $sql = "SELECT * FROM `users` WHERE email = '$email' AND password = '$password'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0)
