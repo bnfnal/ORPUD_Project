@@ -1,6 +1,19 @@
 <?php
-$file = "./".$_FILES['image']['name'];
-move_uploaded_file($_FILES['image']['tmp_name'], $file);
+$types = array('png', 'jpg', 'jpeg');
+if ($_FILES['image']['size'] > 0){
+    $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    if(in_array($ext, $types)){
+        $file = "./image.".$ext;
+        move_uploaded_file($_FILES['image']['tmp_name'], $file);
+        $res = "Результат";
+    }
+    else{
+        $res = "Недопустимый тип файла";
+    }
+}
+else{
+    $res = "Файл не выбран";
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,8 +29,8 @@ move_uploaded_file($_FILES['image']['tmp_name'], $file);
 <div class="form">
     <h1>Результат</h1>
     <form action="main.php" method="post">
-        <div class="result"> <img src="<?php echo $_FILES['image']['name']?>" width="400" height="300" alt="image"> </div>
-        <div class="result">Результат</div>
+        <div class="result"> <img src="<?php echo $file?>" width="400" height="300" alt="image"> </div>
+        <div class="result"><?php echo $res?></div>
         <div class="input-form">
             <input type="submit" value="назад">
         </div>

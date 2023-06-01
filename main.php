@@ -10,9 +10,9 @@
 <body>
 <div class="form">
     <h1>Снимок</h1>
-    <form action="main_data.php" method="post" enctype= multipart/form-data>
+    <form action="main_data.php" method="post" enctype= multipart/form-data >
         <div class="input-form">
-            <input type="file" name="image">
+            <input type="file" name="image" accept=".jpg,.jpeg,.png">
         </div>
         <div class="input-form">
             <input type="submit" value="Загрузить снимок">
